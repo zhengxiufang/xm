@@ -1,0 +1,161 @@
+footer {
+    background-color: #fff;
+    width: 100%;
+}
+
+.foot {
+    width: 1228px;
+    margin: 0 auto;
+}
+
+.foot-top {
+    width: 1150px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    color: rgb(94, 94, 94);
+}
+
+.foot-top span {
+    border-right: 1px solid lightgrey;
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+.foot-top span:hover {
+    color: rgb(240, 130, 57);
+}
+
+.foot-top span:nth-of-type(5) {
+    padding-right: 0;
+    border-right: none;
+}
+
+.foot-top span>i {
+    font-size: 23px;
+    position: relative;
+    top: 6px;
+}
+
+.foot>hr {
+    border: 1px solid rgb(177, 177, 177);
+    border-bottom: none;
+}
+
+.foot-middle {
+    display: flex;
+}
+
+#middle-left {
+    width: 948px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-right: 1px solid rgb(177, 177, 177);
+}
+
+.text-link {
+    width: 240px;
+    /* border: 1px solid green; */
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.text-link h5 {
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+.text-link span {
+    font-size: 12px;
+    padding: 4px 0;
+    color: rgb(94, 94, 94);
+    cursor: pointer;
+}
+
+.text-link span:hover {
+    color: rgb(240, 130, 57);
+}
+
+#middle-right {
+    width: 280px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#middle-right span:nth-of-type(1) {
+    position: relative;
+    top: -5px;
+    color: rgb(240, 130, 52);
+    font-size: 27px;
+}
+
+#middle-right span:nth-of-type(2) {
+    color: rgb(94, 94, 94);
+    font-size: 12px;
+}
+
+#middle-right span:nth-of-type(3) {
+    color: rgb(94, 94, 94);
+    font-size: 11px;
+}
+
+#middle-right p {
+    margin-top: 13px;
+    width: 120px;
+    height: 30px;
+    border: 1px solid rgb(240, 130, 52);
+    padding: 6px 0;
+    font-size: 12px;
+    color: rgb(240, 130, 57);
+    cursor: pointer;
+}
+#middle-right p:hover{
+    background-color: rgb(240, 130, 52);
+    color: white;
+}
+.foot-bottom {
+    margin-top: 80px;
+    display: flex;
+}
+
+.picture {
+    width: 56px;
+    height: 56px;
+    margin-right: 5px;
+}
+
+.ad {
+    display: flex;
+    flex-direction: column;
+    color: rgb(155, 155, 155);
+    font-size: 11px;
+}
+
+.ad p:nth-of-type(1) {
+    color: rgb(95, 94, 94) !important;
+}
+
+.ad p {
+    margin: 0;
+}
+.ad p span:hover{
+    cursor: pointer;
+    color: rgb(240, 130, 57);
+}
+#bottom-pic {
+    margin-bottom: 80px;
+}
+
+#bottom-pic img {
+    margin-top: 4px;
+    height: 30px;
+    width: 82px;
+}

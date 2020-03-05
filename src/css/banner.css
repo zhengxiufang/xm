@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    width: 1228px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+}
+
+.body>.banner {
+    width: 1228px;
+    height: 460px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.body>.banner>img {
+    width: 1228px;
+    height: 460px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.body>.banner>button {
+    position: absolute;
+    width: 45px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 23px;
+    color: white;
+    border: none;
+    text-align: center;
+    line-height: 60px;
+    z-index: 0;
+    opacity: .3;
+    outline: none;
+}
+
+.banner>ul {
+    width: 160px;
+    display: flex;
+    position: absolute;
+    list-style: none;
+    right: 0;
+    bottom: 20px;
+}
+
+.banner>ul>li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: grey;
+    border: 2px solid white;
+    margin-right: 5px;
+}
+
+#prve {
+    left: 235px;
+    top: 200px;
+    text-align: center;
+}
+
+#prve:hover {
+    background-color: black;
+    opacity: .7;
+}
+
+#next {
+    right: 0;
+    top: 200px;
+    text-align: center;
+}
+
+#next:hover {
+    background-color: black;
+    opacity: .7;
+}
+
+.header-left {
+    width: 235px;
+}
+
+.menu {
+    padding: 30px 0;
+    width: 235px;
+    height: 460px;
+    background-color: rgba(0, 0, 0, .5);
+    list-style: none;
+    position: absolute;
+    z-index: 0;
+    opacity: .6;
+}
+
+.menu>li {
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.menu i {
+    position: absolute;
+    top: 13px;
+    right: 25px;
+}
+
+.list {
+    width: 235px;
+    height: 40px;
+    text-align: left;
+    padding-left: 25px;
+    /* background-color: rgb(255, 175, 4); */
+    line-height: 40px;
+}
+
+.list:hover {
+    cursor: pointer;
+    background-color: rgb(255, 175, 4);
+}
+
+.header-right {
+    margin-left: 0;
+    height: 460px;
+    display: flex;
+    /* background-color: red; */
+    box-shadow: 1px 1px 5px grey;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.item2 {
+    width: calc(995px / 4);
+    height: 460px;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.item1 {
+    width: 235px;
+    height: 76.6px;
+    /* background-color: yellowgreen; */
+    padding-left: 15px;
+    display: flex;
+}
+
+.item2>.item1>img {
+    padding-top: 10px;
+    width: 50px;
+    height: 70px;
+}
+
+.item1>p {
+    margin-top: 20px;
+    padding-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.item1>p:hover {
+    cursor: pointer;
+    color: rgb(255, 175, 4);
+}
+
+.show {
+    width: 0;
+    display: none;
+}
+
+.showing {
+    opacity: 1 !important;
+}
+
+.light {
+    background-color: white !important;
+    border: 2px solid grey !important;
+}
+
+.header-bottom {
+    width: 1228px;
+    height: 220px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.header-bottom>.icon {
+    margin-top: 25px;
+    width: 235px;
+    height: 170px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(95, 87, 80);
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-bottom img {
+    margin-top: 25px;
+    width: 320px;
+    height: 170px;
+}
+
+.icon>div {
+    width: calc(235px / 3);
+    height: 68px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon div>p:nth-of-type(1) {
+    font-size: 24px;
+    color: lightgrey;
+    font-weight: 100;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.icon div>p:nth-of-type(2) {
+    font-size: 11px;
+    color: rgb(206, 204, 202);
+}
+
+.icon>div:nth-of-type(1), .icon>div:nth-of-type(3) {
+    border-bottom: 1px solid grey;
+}
+
+.icon>div:nth-of-type(2) {
+    border-bottom: 1px solid grey;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.icon>div:nth-last-of-type(2) {
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+}
+.icon div p:hover{
+    color: white;
+}
+.cycle{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: rgb(95, 87, 80);
+}
+.header-bottom>div:nth-of-type(2){
+    left: 66px;
+    top: 90px;
+}
+.header-bottom>div:nth-of-type(3){
+    left: 144px;
+    top: 90px;
+}

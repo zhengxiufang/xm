@@ -1,0 +1,147 @@
+header {
+    width: 100%;
+}
+
+.header {
+    width: 1228px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left {
+    width: 55px;
+    height: 55px;
+    background-image: url(../images/img.png);
+    background-position: 0 55px;
+    transition: all .3s;
+}
+
+.left:hover {
+    background-position: -55px 55px;
+}
+
+#middle>ul {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+#middle>ul>li {
+    width: calc(700px / 8);
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+#middle>ul>li:hover{
+    color: rgb(255, 103, 0);
+    cursor: pointer;
+}
+.right {
+    width: 300px;
+    height: 50px;
+    background-color: brown;
+    position: relative;
+}
+
+.right>input {
+    width: 300px;
+    height: 50px;
+    border: 1px lightgrey solid;
+    outline: none;
+}
+
+.right:hover input {
+    border: 1px grey solid;
+}
+
+.right:hover p {
+    border-left: 1px grey solid;
+}
+
+.right button {
+    position: absolute;
+    border: none;
+    padding: 0 5px;
+    background-color: rgb(238, 238, 238);
+    color: rgb(134, 134, 134);
+    font-size: 12px;
+    margin: 0;
+    height: 18px;
+    top: 15px;
+}
+
+.right>button:hover {
+    color: white !important;
+    background-color: rgb(255, 103, 0) !important;
+}
+
+.right>button:nth-of-type(2) {
+    width: 60px;
+    right: 60px;
+}
+
+.right>button:nth-of-type(1) {
+    width: 120px;
+    right: 140px;
+}
+
+.right p {
+    width: 50px;
+    height: 48px;
+    border-left: none;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    line-height: 50px;
+    border-left: 1px solid lightgrey;
+}
+
+.middle-content {
+    width: 100%;
+    height: 0px;
+    box-shadow: 0 1px 2px 0px grey;
+    position: absolute;
+    background-color: white;
+    overflow: hidden;
+    transition: .4s all;
+    opacity: 0;
+    z-index: 1;
+}
+
+.middle-content>div {
+    width: 1228px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content>img {
+    width: 150px;
+    height: 140px;
+}
+
+.header-content>p:nth-of-type(1) {
+    margin: 0;
+    margin-top: 5px;
+    color: grey;
+}
+
+.header-content>p:nth-of-type(2) {
+    margin: 0;
+    color: orangered;
+}

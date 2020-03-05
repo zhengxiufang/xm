@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+.ambitus{
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+}
+.ambitus-body {
+    width: 1228px;
+    margin: 0 auto;
+}
+
+.ambitus-body>nav {
+    width: 1228px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ambitus-nav {
+    display: flex;
+}
+
+.ambitus-nav>p {
+    padding-bottom: 3px;
+}
+
+.ambitus-nav>p:nth-of-type(1) {
+    margin-right: 20px;
+}
+
+.ambitus-nav>p:hover {
+    color: orange;
+    border-bottom: 1px solid orange;
+    cursor: pointer;
+}
+
+.ambitus-body>main {
+    width: 1228px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ambitus-left {
+    width: 235px;
+    height: 615px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ambitus-left>img {
+    width: 235px;
+    height: 300px;
+    transition: all .3s;
+}
+
+.ambitus-left>img:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 5px 1px grey;
+    cursor: pointer;
+}
+
+.ambitus-right {
+    margin-left: 10px;
+    width: 980px;
+    height: 615px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ambitus-right>.item_ambitus {
+    width: 230px;
+    height: 300px;
+    text-align: center;
+    background-color: white;
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item_ambitus:hover,
+.top_ambitus:hover,
+.bottom_ambitus:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 5px 1px grey;
+    cursor: pointer;
+}
+
+.item_ambitus>img {
+    width: 200px;
+    height: 180px;
+}
+
+.item_ambitus p {
+    margin: 0;
+}
+
+.item_ambitus>p:nth-of-type(1) {
+    font-size: 14px;
+}
+
+.item_ambitus>p:nth-of-type(2) {
+    margin-top: 5px;
+    font-size: 13px;
+    color: grey;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item_ambitus>p:nth-of-type(3) {
+    margin-top: 10px;
+    font-size: 15px;
+    color: orange;
+}
+
+.item_ambitus .price del {
+    color: grey !important; 
+    font-size: 12px;
+}
+
+.ambitus-right>.item_ambitus:nth-of-type(5),
+.ambitus-right>.item_ambitus:nth-of-type(6),
+.ambitus-right>.item_ambitus:nth-of-type(7),
+.ambitus-right>.item_ambitus:nth-of-type(8) {
+    margin-top: 16px;
+}
+
+.last_ambitus {
+    margin-top: 16px;
+    width: 235px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(245, 245, 245);
+}
+
+.last_ambitus>.top_ambitus,
+.last_ambitus>.bottom_ambitus {
+    width: 230px;
+    height: 140px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    margin-left: 4px;
+    transition: all .3s;
+}
+
+.top_ambitus img,
+.bottom_ambitus img {
+    width: 80px;
+    height: 80px;
+}
+
+.top_ambitus-left,
+.bottom_ambitus-left {
+    text-align: left;
+}
+
+.top_ambitus-left p:nth-of-type(1) {
+    font-size: 14px;
+}
+
+.top_ambitus-left p:nth-of-type(2) {
+    margin-top: 8px;
+    font-size: 14px;
+    color: orange;
+}
+
+.bottom_ambitus-left p:nth-of-type(1) {
+    font-size: 19px;
+}
+
+.bottom_ambitus-left p:nth-of-type(2) {
+    font-size: 13px;
+    color: grey;
+}
