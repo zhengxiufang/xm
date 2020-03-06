@@ -1,0 +1,47 @@
+.splitwrap{height:0}
+
+.splitwrap .xbox{position:relative;top:-90px;left:10px;height:100px;width:140px;padding-right:0}
+
+.navbox .banbox,.navbox .bnav{top:90px}
+
+.detailhead{height:60px;width:100%;border-top:1px solid #a7a2a2;-webkit-box-shadow:0 5px 5px #a7a2a2;-moz-box-shadow:0 5px 5px #a7a2a2;box-shadow:0 5px 5px #a7a2a2}
+
+.detailhead .detailh{width:1226px;margin:0 auto;font-size:18px;font-weight:400;line-height:60px;color:#212121}
+
+.detailwrap{width:100%;border-bottom:1px solid #a7a2a2;background:#fdfbfb}
+
+.detailwrap .detail{width:1226px;margin:0 auto;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;height:620px}
+
+.detailwrap .detail .imgs{text-align:center;-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;position:relative}
+
+.detailwrap .detail .imgs img{width:560px;height:560px;margin-top:35px;display:inline-block;border:1px solid #a7a2a2}
+
+.detailwrap .detail .imgs .my-container{width:300px;height:300px;position:absolute;right:-270px;top:30px}
+
+.detailwrap .detail .message{-webkit-box-flex:1;-webkit-flex:1;-moz-box-flex:1;-ms-flex:1;flex:1;padding-top:35px}.detailwrap .detail .message .mess1 li:nth-child(1){font-size:24px;font-weight:400;color:#212121}
+
+.detailwrap .detail .message .mess1 li:nth-child(2){color:#b0b0b0;font-size:14px;padding:10px 0}
+
+.detailwrap .detail .message .mess1 li:nth-child(3){color:#ff6700}
+
+.detailwrap .detail .message .mess1 li:nth-child(4){font-size:18px;line-height:1;color:#ff6700;margin:10px 0}
+
+.detailwrap .detail .message .mess2{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:20px;margin-top:30px;width:100%;height:140px;background:#f9f9fa}
+
+.detailwrap .detail .message .mess2 li:nth-child(1){float:left}
+
+.detailwrap .detail .message .mess2 li:nth-child(2){float:right}
+
+.detailwrap .detail .message .mess2 ol{clear:both;color:#ff6700;font-size:24px;padding-top:40px}
+
+.detailwrap .detail .message .youhui{margin-top:30px;width:100%;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0;height:52px;padding:10px 0}
+
+.detailwrap .detail .message .youhui li{float:left}
+
+.detailwrap .detail .message .youhui li:nth-child(1){width:80px;padding:2px 0;text-align:center;background:#ff6700;color:#fff;margin-right:50px}
+
+.detailwrap .detail .message .youhui li:nth-child(3){float:right;color:#ff6700}
+
+.detailwrap .detail .message .addcar{text-align:center;border:1px solid #ff6700;background:#fff;color:#ff6700;width:298px;height:52px;line-height:52px;font-size:16px;margin-top:60px}
+
+.detailwrap .detail .message .addcar:hover{cursor:pointer;background:#ff6700;color:#fff}

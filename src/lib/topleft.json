@@ -1,0 +1,63 @@
+[
+    {
+        "id":"1",
+        "name":"小米商城",
+        "herf":"../pages/index.html"
+       
+    },
+    {
+        "id":"2",
+        "name":"loT",
+        "herf":"https://account.xiaomi.com/pass/serviceLogin?callback=https%3A%2F%2Fiot.mi.com%2Fsts%3Fsign%3DfCSIXasbUHiXbFs3j8qOfufIwIw%253D%26followup%3Dhttps%253A%252F%252Fiot.mi.com%252Fcgi-op%252Fapi%252Flogin%253Ffollowup%253Dhttps%25253A%25252F%25252Fiot.mi.com&sid=xiaomiiot"
+       
+    },
+    {
+        "id":"3",
+        "name":"云服务",
+        "herf":"https://i.mi.com/"
+    },
+    {
+        "id":"4",
+        "name":"金融",
+        "herf":"https://jr.mi.com/?from=micom"
+    },
+    {
+        "id":"5",
+        "name":"有品",
+        "herf":"https://www.xiaomiyoupin.com/"
+    },
+    {
+        "id":"6",
+        "name":"爱开放平台",
+        "herf":"https://xiaoai.mi.com/"
+    },
+    {
+        "id":"7",
+        "name":"企业团购",
+        "herf":"https://qiye.mi.com/"
+    },
+    {
+        "id":"8",
+        "name":"资质证照",
+        "herf":"https://www.mi.com/aptitude/list?id=41"
+    },
+    {
+        "id":"9",
+        "name":"协议规则",
+        "herf":"https://www.mi.com/aptitude/list"
+    },
+    {
+        "id":"10",
+        "name":"下载app",
+        "herf":"https://www.mi.com/appdownload"
+    },
+    {
+        "id":"11",
+        "name":"Select Location",
+        "herf":"../pages/index.html"
+    }
+]
+
+
+
+

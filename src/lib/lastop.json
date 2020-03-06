@@ -1,0 +1,27 @@
+[
+    {
+        "id":1,
+        "gly":"iconfont icon-weibiaoti--",
+        "name":"预约维修服务"
+    },
+    {
+        "id":2,
+        "gly":"iconfont icon-7tianwuliyoutuihuo",
+        "name":"7天无理由退货"
+    },
+    {
+        "id":1,
+        "gly":"iconfont icon-15",
+        "name":"15天免费换货"
+    },
+    {
+        "id":1,
+        "gly":"iconfont icon-liwu",
+        "name":"满99包邮"
+    },
+    {
+        "id":1,
+        "gly":"iconfont icon-location",
+        "name":"520余家售后网点"
+    }
+]

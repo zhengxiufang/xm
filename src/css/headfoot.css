@@ -1,0 +1,153 @@
+/* 顶部   导航栏 */
+.banbox a{color: #333;text-decoration: none;}
+.topnavwrap{background: rgb(51,51,51);}
+.topnav{height: 40px;width: 1226px;background: rgb(51,51,51);margin: 0 auto;}
+.head > img{cursor: pointer;}
+.topleft{float: left;}
+.topleft:hover{cursor: pointer;}
+.topleft li,.topright li{float: left;line-height: 40px;height: 40px;}
+.topleft a,.topright a{text-decoration: none;color: #b0b0b0;font-size: 12px;}
+.topleft_{margin: 0 6px 0 7px;color: #636060;}
+.topleft_:last-child{display: none;}
+.topleft li:hover a{color: #fff;}
+.topright li:hover a{color: #fff;}
+
+.topright li:nth-child(6){display: none;}
+
+.topright{float: right;}
+.topright:hover{cursor: pointer;}
+.topcar{width: 120px;height: 40px;background: #4d4848;float: left;margin-left: 15px;text-align: center;line-height: 40px;
+color:#b0b0b0 ;font-size: 13px;position: relative;}
+.topcar span{position: absolute;top: 12px;left: 12px;font-size: 16px;}
+
+.topcar:hover{background: #fff;color: #f75000;cursor: pointer;}
+
+.navapp{position: relative;}
+.navapp span{width: 0;height: 0;border:6px solid transparent;border-bottom:6px solid #fff;position: absolute;bottom: 0;left: 20px;display: none;}
+.navapp:hover span{display: block;}
+.navapp p {width: 130px;color: #000;position: absolute;top: 40px;left: -35px;margin-bottom: 0;transition: all .3s;height: 0;overflow: hidden;z-index: 999;}
+.navapp:hover p{height: 150px;}
+
+
+
+/* 导航 */
+.nav{width: 1226px;height: 100px;margin: 0 auto;position: relative;}
+
+.navleft,.navcenter{float: left;}
+
+/* 导航左侧 */
+.navleft{position: absolute;top: 20px;background: #ff7755;}
+
+
+/* 导航中间 */
+.navcenter{margin-top: 30px;margin-left: 190px;}
+.navcenter li{float: left;margin-right: 20px;}
+.navcenter li a{color: #333;font-size: 16px;text-decoration: none;}
+.navcenter li:hover a{color: #f75000; }
+
+
+
+/* 导航右侧 */
+.navright{float: right;display: block;margin-left: 20px;margin-top: 15px;position: relative;border: 1px solid rgb(192, 187, 187);}
+.navr1{width: 295px;height: 50px;}
+.navr2{width: 50px;height: 50px;position: absolute;right: 0;top: 0;border-left: 1px solid rgb(192, 187, 187);background: #fff;text-align: center;}
+
+.sousuo{font-size: 16px;line-height: 50px;}
+.navr2:hover{background: #f75000;color: #fff;}
+.navright > a{color: #333;}
+
+.p1,.p2{position: absolute;font-size: 12px;top:20px;width: 85px;text-align: center;background: rgb(231, 231, 231);}
+.p1 a,.p2 a{text-decoration: none;color: #757575;}
+.p1{left: 60px;}
+.p2{left: 150px;}
+.p1:hover a{color: #fff;background: #ff7755;}
+.p2:hover a{color: #fff;background: #ff7755;}
+.p1:hover{background: #ff7755;}
+.p2:hover{background: #ff7755;}
+
+/* 导航下拉菜单 */
+.selectwrap{border-top:1px solid rgb(192, 187, 187); border-bottom:1px solid rgb(192, 187, 187);display:none;
+background: #fff;position: absolute;z-index: 9999;width: 100%;}
+.select{width: 1226px;height: 230px;margin: 0 auto;display: flex;justify-content: space-between;padding: 0 20px;
+}
+.select li{padding: 40px 0;text-align: center;font-size: 12px;line-height: 1    ;cursor: pointer;}
+.select img{width: 160px;height: 110px;border-right: 1px solid #aca9a9;}
+.select li h2,.select li h3{font-size: 12px;margin: 0;}
+.select li h2{margin-top:20px}
+.select li h3{margin-top:5px;color:#f75000;}
+
+/* 底部 */
+.last{height: 272px;width: 1226px;margin: 0 auto;text-align: center;}
+
+/*底部  顶部 */
+.lastop{display: flex;padding: 27px 0;border-bottom: 1px solid rgb(199, 199, 199);font-size: 16px;margin-bottom: 0;}
+.lastop li{flex: 1;border-right: 1px solid rgb(199, 199, 199);height: 25px;line-height: 25px;}
+.lastop li:last-child{border:none;}
+.lastop li:hover{color: #f75000;cursor: pointer;}
+.lastop li p{position: relative;margin-bottom: 0;}
+.lastop li span{position: absolute;font-size: 24px;left: 40px;}
+
+
+/* 底部 第二部分 */
+.lastbottom{height: 192px;padding-top: 40px;}
+.lastbottom > ul{float: left;margin-bottom: 0;}
+
+.lastleft{width: 974px;height: 112px;border-right: 1px solid rgb(199, 199, 199);
+text-align: left;}
+.lastleft li{float: left;width: 160px;}
+.lastleft p{font-size: 14px;margin-bottom: 25px;}
+.lastleft ol{font-size: 12px;color: #a8a7a7;margin-bottom: 10px;}
+.lastleft ol:hover{color: #f75000;cursor: pointer;}
+
+
+.lastright{text-align: center;width: 250px;font-size: 12px;}
+.lastright li:nth-child(1){font-size: 22px;color: #f75000;}
+.lastright li:last-child{color: #f75000;margin-top: 20px;
+border: 1px solid #f75000;width: 120px;height: 30px;line-height: 30px;margin-left: 70px;}
+.lastright li:last-child:hover{background: #f75000;color: #fff;cursor: pointer;}
+
+
+.footerwrap{background: #fafafa;padding: 30px 0 40px;overflow: hidden;}
+.footer{margin: 0 auto;width: 1226px;}
+
+.footer >ul{float: left;}
+
+.footl li{background: #f75000;}
+
+.footr{font-size: 12px;margin-left: 10px;}
+.footr li ol{float: left;border-right: 1px solid rgb(156, 154, 154);height: 14px;line-height: 1;padding: 0 5px;color: rgb(75, 74, 74);}
+.footr li ol:last-child{border: none;}
+.footr li ol:hover{color: #f06829;cursor: pointer;}
+
+.footr li p{height: 72px;width: 650px;color: rgb(156, 154, 154);margin-bottom: 0;}
+
+.footr img{width: 90px;height: 30px;float: left;}
+
+.footlast{font-size: 20px;margin-left: 420px;margin-top: 30px;color: rgb(214, 207, 207);}
+
+/* banner   导航 */
+.bnav{width: 234px;height: 460px;background: #fff;padding: 20px 0;position: absolute;z-index: 99;top: 100px;border: 1px solid #f75000;left: -70px;
+display: none;}
+.bnav ul li{width: 234px;height: 42px;padding-left:30px ;line-height: 42px;position: relative;color: #333;}
+.bnav ul li .glyphicon{font-size: 16px;color: #e0e0e0;position: absolute;right: 25px;top: 14px;}
+.bnav ul li:hover{background: #f06829;cursor: pointer;
+color:#fff;}
+
+/* banner 导航 二级菜单 */
+
+.banbox{width: 800px;background: #fff;position: absolute;left: 160px;top: 100px;height: 460px;z-index: 999;border-top: 1px solid rgb(214, 207, 207);box-shadow: 5px 5px 5px rgb(163, 161, 161);display: none;border-left: 1px solid #f75000;}
+
+.banbox ul{width: 100%;height: 100%;}
+.banbox ul li{width: 260px;float: left;display: flex;padding: 16px;cursor: pointer;}
+.banbox ul li img{width: 40px;height: 40px;margin-right: 20px;}
+.banbox ul li span{line-height: 40px;line-height: 40px;font-size: 12px;}
+.banbox ul li span:hover{color: #f75000;}
+.splitwrap .box{    
+   position: relative;
+   top: -140px;
+   font-size: 16px;
+   color: #333;
+   left: 30px;
+   cursor: pointer;
+   padding: 30px;
+}

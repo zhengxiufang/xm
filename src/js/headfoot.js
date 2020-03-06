@@ -1,3 +1,5 @@
+$('.head > img').click(()=>window.location.href='../pages/index.html')
+
 $('.select').click(()=>{
     window.location.href='../pages/list.html'
     console.log(1)
@@ -20,7 +22,6 @@ function getTopleft() {
                 `
             });
             $('.topleft').html(str)
-
             $('.topleft').children('li').eq(0).click(() => window.location.href = '../pages/index.html')
 
             // 顶部导航下拉菜单
@@ -141,6 +142,9 @@ function getSou() {
 // banner
 // banner  图
 
+$('.bnav').click(() => {
+    window.location.href = '../pages/list.html'
+})
 
 getBannerNav()
 
@@ -276,91 +280,3 @@ function getFootrli() {
         }
     })
 }
-
-
-// 请求列表数据
-//  main_sort 0 综合 1 销量  2  价格升序  asc 
-
-// 分页 刚开始时第一页
-let currt = 1
-let sort = 0
-getList()
-
-function getList(sort = 0, currt = 1) {
-    $.ajax({
-        url: 'https://api.search.mi.com/search',
-        data: {
-            query: '智能家庭',
-            page_index: currt,
-            page_size: 8,
-            filter_tag: 0,
-            main_sort: sort,
-            sort_by: 'dsc',
-            province_id: 2,
-            city_id: 36,
-        },
-        dataType: 'jsonp',
-        success: function (res) {
-
-            // 渲染 商品列表
-            let strList = ''
-            let arrList = res.data.pc_list
-            console.log(arrList)
-            arrList.forEach(item => {
-                strList += `
-                <li data-id=${item.product_id}>
-                <img src="${item.commodity_list[0].image}" alt="">
-                <p>${item.commodity_list[0].name}</p>
-                <p>${item.commodity_list[0].price}</p>
-                <img src="${item.commodity_list[0].image}" alt="">
-            </li>`
-            })
-
-            $('.list').html(strList)
-
-            $('.list li').click(function () {
-                // let obj = arrList[$(this).index()].commodity_list[0]
-                // localStorage.setItem('info', JSON.stringify(obj))
-                // window.location.href = '../pages/detail.html'
-                console.log($(this).data('id'))
-                const id=$(this).data('id')
-                let obj=null
-                for(let i = 0;i<$('.list li').length;i++){
-                    if(arrList[i].product_id==id){
-                        obj=arrList[i]
-                        break
-                    }
-                }
-                localStorage.setItem('info', JSON.stringify(obj.commodity_list[0]))
-                window.location.href = '../pages/detail.html'
-            })
-
-
-        }
-    })
-}
-
-
-// 点击按钮排序
-$('.sort li').click(function () {
-    $(this).css('color', '#f75000').siblings().css('color', '#333')
-    sort = $(this).index()
-    getList(sort, currt)
-})
-
-// 分页
-$('.pagi').pagination({
-    pageCount: 3, // 总页数
-    current: 1, // 当前页
-    jump: false,
-    coping: true,
-    homePage: '首页', // 首页按钮的文本
-    endPage: '末页', // 末页按钮的文本
-    callback: function (api) { // 当你切换页面的时候会触发
-        // api.getCurrent() 获取当前是第几页
-        currt = api.getCurrent()
-        getList(sort, currt)
-    }
-})
-
-
